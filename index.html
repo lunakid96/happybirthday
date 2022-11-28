@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="Container">
+    <div id="Container">
         <div id="Loading">
             <div class="ring"></div>
         </div>
@@ -20,9 +20,10 @@
     <script>
         const myTimeout = setTimeout(myContent, 5000);
         function myContent() {
+            document.getElementById('Container').style.animation = 'changebg 4s';
             document.getElementById('Content').style.display = 'flex';
             document.getElementById('Loading').style.display = 'none';
-            document.getElementById('Content').style.animation = 'changebg 4s';
+            document.getElementById('Content').style.animation = 'changecolor 4s';
         }
     </script>
 </body>

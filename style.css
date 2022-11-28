@@ -3,7 +3,7 @@ body {
     overflow: hidden;
 }
 
-.Container {
+#Container {
     width: 100%;
     height: 100vh;
     padding: 10px;
@@ -15,7 +15,7 @@ body {
 
 #Content {
     display: none;
-    color: #00ffff;
+    color: #ffffff;
     font-size: 30px;
     justify-content: center;
 }
@@ -46,12 +46,22 @@ body {
     }
 }
 
-@keyframes changebg {
+@keyframes changecolor {
     from {
         color: black;
     }
 
     to {
         color: #00ffff;
+    }
+}
+
+@keyframes changebg {
+    from {
+        background: black;
+    }
+
+    to {
+        background: linear-gradient(45deg, #ff0057, #2196f3);
     }
 }
