@@ -2,6 +2,7 @@ body {
     margin: 0;
     overflow: hidden;
 }
+
 .Container {
     width: 100%;
     height: 100vh;
@@ -10,18 +11,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  #Content {
+}
+
+#Content {
     display: none;
-    color: white;
-  }
-  #Loading {
+    color: #00ffff;
+    font-size: 30px;
+    justify-content: center;
+}
+
+#Loading {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-  
-  .ring {
+}
+
+.ring {
     border: 4px solid transparent;
     width: 100px;
     height: 100px;
@@ -29,13 +34,24 @@ body {
     border-top-color: #bbc2d3;
     border-right-color: #bbc2d3;
     animation: animate 2s linear infinite;
-  }
-  
-  @keyframes animate {
+}
+
+@keyframes animate {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
+
+@keyframes changebg {
+    from {
+        color: black;
+    }
+
+    to {
+        color: #00ffff;
+    }
+}
