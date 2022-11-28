@@ -9,11 +9,19 @@
 
 <body>
     <div class="Container">
-        <div class="Loading">
+        <div id="Loading">
             <div class="ring"></div>
         </div>
-        <div class="Content">
+        <div id="Content">
             <span>Happy Birthday</span>
         </div>
     </div>
+
+    <script>
+        const myTimeout = setTimeout(myContent, 5000);
+        function myContent() {
+            document.getElementById('Content').style.display = 'block';
+            document.getElementById('Loading').style.display = 'none';
+        }
+    </script>
 </body>
